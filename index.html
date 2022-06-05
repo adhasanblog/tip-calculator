@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/style.css" />
+</head>
+
+<body class="bg-light-grayish-cyan">
+    <main>
+        <div class="bg-white w-800 h-auto mx-auto my-60 rounded-xl">
+            <div class="flex flex-row ml-8 mr-6">
+                <div class="flex flex-col w-1/2 mr-10">
+                    <label class="mt-6 font-mono text-sm text-dark-grayish-cyan" id="txtBill">Bill</label
+            >
+            <input
+              class="bg-icon-dollar bg-no-repeat bg-left py-2 px-2 rounded-md font-mono mt-2 text-right bg-very-light-grayish outline-strong-cyan placeholder:font-mono placeholder:text-grayish-cyan placeholder:font-bold"
+              type="number"
+              id="bill"
+              placeholder="0"
+              value=""
+            />
+            <label class="mt-6 font-mono text-sm text-dark-grayish-cyan"
+              >Select Tip %</label
+            >
+            <div
+              class="flex flex-row flex-wrap mt-3 justify-between"
+              id="tippersentase"
+            >
+              <button
+                class="btn-color btn-tip tip-5-persen w-100 py-2 rounded-md mb-5 text-center font-bold font-mono text-xl"
+                value="5"
+              >
+                5%
+              </button>
+              <button
+                class="btn-color btn-tip tip-10-persen w-100 py-2 rounded-md mb-5 text-center font-bold font-mono text-xl"
+                value="10"
+              >
+                10%</button
+              ><button
+                class="btn-color btn-tip tip-15-persen tip-15-persen w-100 py-2 rounded-md mb-5 text-center font-bold font-mono text-xl"
+                value="15"
+              >
+                15%</button
+              ><button
+                class="btn-color btn-tip tip-25-persen w-100 py-2 rounded-md mb-5 text-center font-bold font-mono text-xl"
+                value="25"
+              >
+                25%</button
+              ><button
+                class="btn-color btn-tip tip-50-persen w-100 py-2 rounded-md mb-5 text-center font-bold font-mono text-xl"
+                value="50"
+              >
+                50%
+              </button>
+              <input
+                type="number"
+                class="bg-very-light-grayish w-100 h-11 py-2 px-2 rounded-md outline-strong-cyan text-right text-xl font-mono placeholder:text-light-grayish-cyan placeholder:font-mono placeholder:text-center placeholder:text-xl"
+                placeholder="Custom"
+                id="customtip"
+              />
+            </div>
+            <label
+              class="mt-1 font-mono text-sm text-dark-grayish-cyan flex flex-row justify-between"
+              ><a>Number of People</a
+              ><a id="cantbezero" class="text-colors-orange-500"
+                >Can't be Zero</a
+              ></label
+            >
+            <input
+              class="bg-icon-person border-2 bg-no-repeat bg-left py-2 px-2 mb-5 rounded-md font-mono mt-2 text-right bg-very-light-grayish border-colors-orange-500 outline-colors-orange-500 placeholder:font-mono placeholder:text-grayish-cyan placeholder:font-bold"
+              type="number"
+              id="inputpeople"
+              placeholder="0"
+              value=""
+            />
+          </div>
+          <div class="w-1/2 my-6">
+            <div class="flex flex-col bg-very-dark-cyan rounded-xl h-full">
+              <div class="flex flex-row mt-9 justify-between ml-5 mr-2">
+                <p class="text-white my-auto font-mono">
+                  <a class="text-very-light-grayish">Tip Amount</a> <br />
+                  <a class="text-grayish-cyan">/ person</a>
+                </p>
+                <label class="text-5xl font-bold mr-4 font-mono" id="totaltip"
+                  >$0.00</label
+                >
+              </div>
+              <div class="flex flex-row mt-9 justify-between ml-5 mr-2">
+                <p class="text-white my-auto font-mono">
+                  <a class="text-very-light-grayish">Total</a> <br />
+                  <a class="text-grayish-cyan">/ person</a>
+                </p>
+                <label
+                  class="text-5xl font-bold mr-4 font-mono"
+                  id="totalbillpeople"
+                  >$0.00</label
+                >
+              </div>
+              <a
+                class="ml-5 mt-24 mr-6 py-2 bg-strong-cyan rounded-md text-center font-mono hover:opacity-20 hover:text-opacity-20"
+                href="#"
+                id="reset"
+                >RESET</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="/js/calculator.js"></script>
+    </main>
+  </body>
+</html>
+<a class="btn-color-active"></a>
